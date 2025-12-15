@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balamurugan S. | AI & Hardware</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        bgDark: '#0a0a0a',
+                        accent: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            background-color: #3b82f6;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .glass-nav {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-bgDark text-white overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <nav class="hidden md:flex fixed top-8 left-1/2 transform -translate-x-1/2 z-50 glass-nav px-8 py-3 rounded-full space-x-8 text-sm font-medium text-gray-300 shadow-2xl transition-all hover:border-gray-700">
+        <a href="#" class="hover:text-white transition-colors">Home</a>
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+        <a href="#work" class="hover:text-white transition-colors">Work</a>
+        <a href="mailto:contact@imbala.me" class="text-accent">Contact</a>
+    </nav>
+
+    <nav class="md:hidden fixed bottom-0 w-full z-50 glass-nav border-t border-gray-800 pb-safe">
+        <div class="flex justify-around items-center py-4 text-xs text-gray-400">
+            <a href="#" class="flex flex-col items-center text-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                <span class="mt-1">Home</span>
+            </a>
+            <a href="#projects" class="flex flex-col items-center hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <span class="mt-1">Work</span>
+            </a>
+            <a href="#about" class="flex flex-col items-center hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span class="mt-1">About</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="min-h-screen flex flex-col justify-center items-center text-center px-4 max-w-5xl mx-auto w-full pt-20 pb-10">
+        
+        <div class="flex flex-wrap justify-center items-baseline gap-2 md:gap-4 mb-4 md:mb-6">
+            <span class="text-4xl md:text-6xl font-bold text-gray-400 tracking-tight">
+                Hi, I'm
+            </span>
+            <h1 class="text-6xl md:text-8xl font-black tracking-tight text-white leading-none">
+                Balamurugan.
+            </h1>
+        </div>
+
+        <div class="h-8 md:h-12 mb-6 md:mb-8 text-lg md:text-2xl font-mono font-bold flex justify-center gap-2 md:gap-3">
+            <span class="text-gray-500">I build</span>
+            <span class="text-accent">
+                <span id="typewriter"></span><span class="cursor">&nbsp;</span>
+            </span>
+        </div>
+
+        <p class="text-gray-400 text-sm md:text-lg leading-relaxed max-w-2xl mx-auto mb-8 md:mb-10 font-medium">
+            Bridging the gap between code and the real world. <br class="hidden md:block" />
+            From autonomous electric vehicles to emergency response AI.
+        </p>
+
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs md:text-sm text-gray-300 mb-10 hover:bg-white/10 transition-colors cursor-default">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            Building next-gen EVs @ SASTRA Racing Team
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-4 justify-center w-full md:w-auto px-4 md:px-0">
+            <a href="Balamurugan_S_Resume.pdf" class="px-8 py-3.5 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-transform active:scale-95 w-full md:w-auto text-center">
+                Download Resume
+            </a>
+            <a href="mailto:contact@imbala.me" class="px-8 py-3.5 border border-white/20 text-white font-medium rounded-lg hover:bg-white/10 transition-colors active:scale-95 w-full md:w-auto text-center">
+                Contact Me
+            </a>
+        </div>
+
+    </main>
+
+<section id="about" class="py-20 px-6 w-full max-w-7xl mx-auto border-t border-white/5">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            
+            <div class="relative group w-full max-w-md mx-auto lg:max-w-none aspect-[4/5] lg:aspect-square">
+                <div class="absolute inset-0 border-2 border-white/10 rounded-2xl translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2 hidden md:block"></div>
+                
+                <div class="relative w-full h-full rounded-2xl overflow-hidden bg-neutral-800">
+                    <img src="images/me.jpg" alt="Balamurugan S." class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out">
+                    <div class="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center h-full space-y-8 pt-4 lg:pt-0">
+                
+                <div>
+                    <h2 class="text-accent font-mono text-xl mb-2 font-bold tracking-wide">01. About Me</h2>
+                    <h3 class="text-4xl md:text-5xl font-black text-white leading-tight">Beyond the Code.</h3>
+                </div>
+
+                <div class="space-y-6 text-gray-400 leading-relaxed text-base md:text-lg">
+                    
+                    <p>
+                        I’m <span class="text-white font-semibold">Balamurugan</span>, an engineering student studying <span class="text-white">Electrical and Electronics Engineering</span> at <span class="text-white">SASTRA University</span>, passionate about building intelligent systems that interact with the real world.
+                    </p>
+
+                    <p>
+                        I’m driven by curiosity and a desire to understand how things work beneath the surface. For me, engineering is a way of thinking — observing systems, questioning assumptions, and refining ideas until they become reliable and meaningful.
+                    </p>
+
+                    <p>
+                        I believe the best learning happens not through theory alone, but through <span class="text-accent">building, testing, failing, and improving</span>.
+                    </p>
+
+                    <p>
+                        I’m drawn to problems that demand patience, responsibility, and clarity — especially in areas like intelligent systems, automation, and mobility. My aim is to create work that is thoughtful, scalable, and genuinely useful.
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-white/10">
+                   <span class="font-mono text-xs text-gray-500 tracking-widest uppercase">Driven by Curiosity · Defined by Engineering</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <script>
+        const phrases = [
+            "AI, hardware & mobility", 
+            "Scalable IoT Solutions",
+            "EV Powertrain Systems",
+            "AI-Based Applications",
+            "Intelligent Systems"
+        ];
+        
+        const el = document.getElementById('typewriter');
+        let sleepTime = 100;
+        let curPhraseIndex = 0;
+        
+        const writeLoop = async () => {
+            while (true) {
+                let curWord = phrases[curPhraseIndex];
+                
+                for (let i = 0; i < curWord.length; i++) {
+                    el.innerText = curWord.substring(0, i + 1);
+                    await new Promise(r => setTimeout(r, sleepTime));
+                }
+                
+                await new Promise(r => setTimeout(r, 2000));
+                
+                for (let i = curWord.length; i > 0; i--) {
+                    el.innerText = curWord.substring(0, i - 1);
+                    await new Promise(r => setTimeout(r, sleepTime / 2));
+                }
+                
+                await new Promise(r => setTimeout(r, 500));
+                
+                curPhraseIndex++;
+                if (curPhraseIndex === phrases.length) curPhraseIndex = 0;
+            }
+        };
+        writeLoop();
+    </script>
+</body>
+</html>
