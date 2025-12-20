@@ -49,28 +49,65 @@
 
 <body class="bg-bgDark text-white overflow-x-hidden selection:bg-accent selection:text-white">
 
-    <nav class="hidden md:flex fixed top-8 left-1/2 transform -translate-x-1/2 z-50 glass-nav px-8 py-3 rounded-full space-x-8 text-sm font-medium text-gray-300 shadow-2xl transition-all hover:border-gray-700">
-        <a href="#" class="hover:text-white transition-colors">Home</a>
-        <a href="#about" class="hover:text-white transition-colors">About</a>
-        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
-        <a href="#work" class="hover:text-white transition-colors">Work</a>
-        <a href="mailto:contact@imbala.me" class="text-accent">Contact</a>
+    <nav class="hidden md:flex fixed top-8 left-1/2 transform -translate-x-1/2 z-50 glass-nav px-6 py-3 rounded-full text-sm font-medium text-gray-300 shadow-2xl transition-all hover:border-gray-700 whitespace-nowrap">
+        <ul class="flex space-x-8">
+            <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+            <li><a href="#work" class="hover:text-white transition-colors">Work</a></li>
+            <li><a href="#education" class="hover:text-white transition-colors">Education</a></li>
+            <li><a href="#blog" class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#readings" class="hover:text-white transition-colors">Readings</a></li>
+            
+            <li><a href="mailto:contact@imbala.me" class="text-accent">Contact</a></li>
+        </ul>
     </nav>
+
+    <div id="mobile-menu" class="hidden fixed bottom-24 right-4 z-50 glass-nav rounded-2xl p-4 flex flex-col gap-4 min-w-[160px] shadow-2xl border border-white/10 origin-bottom-right transition-all duration-200">
+        <a href="#about" class="flex items-center gap-3 text-gray-300 hover:text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+            About
+        </a>
+        <a href="#education" class="flex items-center gap-3 text-gray-300 hover:text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+            Education
+        </a>
+        <a href="#blog" class="flex items-center gap-3 text-gray-300 hover:text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+            Blog
+        </a>
+        <a href="#readings" class="flex items-center gap-3 text-gray-300 hover:text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            Readings
+        </a>
+        <div class="h-px bg-white/10 my-1"></div>
+        <a href="mailto:contact@imbala.me" class="flex items-center gap-3 text-accent hover:text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            Contact
+        </a>
+    </div>
 
     <nav class="md:hidden fixed bottom-0 w-full z-50 glass-nav border-t border-gray-800 pb-safe">
         <div class="flex justify-around items-center py-4 text-xs text-gray-400">
-            <a href="#" class="flex flex-col items-center text-accent">
+            <a href="#" class="flex flex-col items-center hover:text-white transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
                 <span class="mt-1">Home</span>
             </a>
-            <a href="#projects" class="flex flex-col items-center hover:text-white">
+            
+            <a href="#projects" class="flex flex-col items-center hover:text-white transition-colors">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg>
+                <span class="mt-1">Projects</span>
+            </a>
+
+            <a href="#work" class="flex flex-col items-center hover:text-white transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
                 <span class="mt-1">Work</span>
             </a>
-            <a href="#about" class="flex flex-col items-center hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                <span class="mt-1">About</span>
-            </a>
+
+            <button id="mobile-menu-btn" class="flex flex-col items-center text-accent hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                <span class="mt-1">More</span>
+            </button>
         </div>
     </nav>
 
@@ -116,13 +153,12 @@
 
     </main>
 
-<section id="about" class="py-20 px-6 w-full max-w-7xl mx-auto border-t border-white/5">
+    <section id="about" class="py-20 px-6 w-full max-w-7xl mx-auto border-t border-white/5">
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             
             <div class="relative group w-full max-w-md mx-auto lg:max-w-none aspect-[4/5] lg:aspect-square">
                 <div class="absolute inset-0 border-2 border-white/10 rounded-2xl translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2 hidden md:block"></div>
-                
                 <div class="relative w-full h-full rounded-2xl overflow-hidden bg-neutral-800">
                     <img src="images/me.jpg" alt="Balamurugan S." class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out">
                     <div class="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-20 transition-opacity"></div>
@@ -130,26 +166,21 @@
             </div>
 
             <div class="flex flex-col justify-center h-full space-y-8 pt-4 lg:pt-0">
-                
                 <div>
                     <h2 class="text-accent font-mono text-xl mb-2 font-bold tracking-wide">01. About Me</h2>
                     <h3 class="text-4xl md:text-5xl font-black text-white leading-tight">Beyond the Code.</h3>
                 </div>
 
                 <div class="space-y-6 text-gray-400 leading-relaxed text-base md:text-lg">
-                    
                     <p>
                         I’m <span class="text-white font-semibold">Balamurugan</span>, an engineering student studying <span class="text-white">Electrical and Electronics Engineering</span> at <span class="text-white">SASTRA University</span>, passionate about building intelligent systems that interact with the real world.
                     </p>
-
                     <p>
                         I’m driven by curiosity and a desire to understand how things work beneath the surface. For me, engineering is a way of thinking — observing systems, questioning assumptions, and refining ideas until they become reliable and meaningful.
                     </p>
-
                     <p>
                         I believe the best learning happens not through theory alone, but through <span class="text-accent">building, testing, failing, and improving</span>.
                     </p>
-
                     <p>
                         I’m drawn to problems that demand patience, responsibility, and clarity — especially in areas like intelligent systems, automation, and mobility. My aim is to create work that is thoughtful, scalable, and genuinely useful.
                     </p>
@@ -162,8 +193,115 @@
 
         </div>
     </section>
+
+   <section id="projects" class="py-24 px-6 w-full max-w-7xl mx-auto border-t border-white/5">
+        
+        <div class="flex flex-wrap justify-between items-end mb-12 md:mb-16 gap-4">
+            <div>
+                <h2 class="text-accent font-mono text-xl md:text-2xl mb-4 font-bold tracking-wide">02. Project Highlights</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white">What I've built.</h3>
+            </div>
+            
+            <a href="projects.html" class="hidden md:flex items-center gap-2 text-sm font-mono text-accent hover:text-white transition-colors group">
+                View Full Archive 
+                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[350px]">
+
+            <a href="project-car.html" class="group relative lg:col-span-2 rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 block">
+                <div class="absolute inset-0">
+                    <img src="images/car.jpg" alt="EFWDC Car" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                </div>
+                
+                <div class="absolute bottom-0 left-0 p-8 w-full">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full flex items-center gap-1">
+                            🏆 1st Prize Winner
+                        </span>
+                        <span class="text-accent text-xs font-mono">EFWDC 2025</span>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-accent transition-colors">Electric Four-Wheeler (SAE)</h3>
+                    <p class="text-gray-300 text-sm md:text-base mb-4 max-w-lg hidden md:block">
+                        Designed the semi-autonomous powertrain and control logic. Features mobile-based control and custom differential systems.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-400">
+                        <span class="bg-white/5 px-2 py-1 rounded border border-white/10">EV Powertrain</span>
+                        <span class="bg-white/5 px-2 py-1 rounded border border-white/10">IoT Control</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="project-dispatcher.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 flex flex-col">
+                <div class="absolute inset-0">
+                     <img src="images/dispatcher.jpg" alt="AI Dispatcher" class="w-full h-full object-cover opacity-30 group-hover:opacity-20 transition-all duration-700">
+                     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+                </div>
+                
+                <div class="relative h-full flex flex-col justify-end p-8">
+                    <div class="mb-auto">
+                        <div class="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">AI Emergency Dispatcher</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        NIT Trichy Intern Project. An NLP-driven system that classifies emergency calls and dispatches units via GeoJSON.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
+                        <span>#NLP</span> <span>#GeoJSON</span> <span>#Python</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="project-pothole.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 p-8 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Automated Pothole Mapping</h3>
+                    <p class="text-gray-400 text-sm">Computer vision system using OpenCV to detect road hazards and alert drivers in real-time.</p>
+                </div>
+                <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+                    <span class="text-gray-500">OpenCV / Python</span>
+                    <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </a>
+
+            <a href="project-emotion.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 p-8 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Emotion Detection</h3>
+                    <p class="text-gray-400 text-sm">Real-time emotion recognition trained on a custom YOLOv8 model with 6.6k images.</p>
+                </div>
+                <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+                    <span class="text-gray-500">YOLOv8 / Deep Learning</span>
+                    <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </a>
+
+            <a href="project-game.html" class="group relative md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 p-8 flex flex-col justify-between">
+                 <div>
+                    <h3 class="text-xl font-bold text-white mb-2">AI STEM Game</h3>
+                    <p class="text-gray-400 text-sm">Interactive learning game that generates real-world STEM questions dynamically using AI.</p>
+                </div>
+                <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+                    <span class="text-gray-500">Gamification / AI</span>
+                    <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="mt-8 md:hidden flex justify-center">
+             <a href="projects.html" class="inline-flex items-center gap-2 text-sm font-mono text-accent hover:text-white transition-colors border border-accent/20 px-6 py-3 rounded-full">
+                View Full Archive 
+                <span>→</span>
+            </a>
+        </div>
+
+    </section>
     
     <script>
+        // TYPEWRITER SCRIPT (UNCHANGED)
         const phrases = [
             "AI, hardware & mobility", 
             "Scalable IoT Solutions",
@@ -179,26 +317,36 @@
         const writeLoop = async () => {
             while (true) {
                 let curWord = phrases[curPhraseIndex];
-                
                 for (let i = 0; i < curWord.length; i++) {
                     el.innerText = curWord.substring(0, i + 1);
                     await new Promise(r => setTimeout(r, sleepTime));
                 }
-                
                 await new Promise(r => setTimeout(r, 2000));
-                
                 for (let i = curWord.length; i > 0; i--) {
                     el.innerText = curWord.substring(0, i - 1);
                     await new Promise(r => setTimeout(r, sleepTime / 2));
                 }
-                
                 await new Promise(r => setTimeout(r, 500));
-                
                 curPhraseIndex++;
                 if (curPhraseIndex === phrases.length) curPhraseIndex = 0;
             }
         };
         writeLoop();
+
+        // MOBILE MENU TOGGLE SCRIPT (NEW)
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
     </script>
 </body>
 </html>

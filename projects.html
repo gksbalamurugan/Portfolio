@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Balamurugan S.</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        bgDark: '#0a0a0a',
+                        accent: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        .glass-nav {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-bgDark text-white overflow-x-hidden selection:bg-accent selection:text-white min-h-screen flex flex-col justify-between">
+
+    <nav class="hidden md:flex fixed top-8 left-1/2 transform -translate-x-1/2 z-50 glass-nav px-6 py-3 rounded-full text-sm font-medium text-gray-300 shadow-2xl transition-all hover:border-gray-700 whitespace-nowrap">
+        <ul class="flex space-x-8">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="index.html#about" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#" class="text-accent font-bold cursor-default">Projects</a></li>
+            <li><a href="index.html#work" class="hover:text-white transition-colors">Work</a></li>
+            <li><a href="index.html#education" class="hover:text-white transition-colors">Education</a></li>
+            <li><a href="index.html#blog" class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="index.html#readings" class="hover:text-white transition-colors">Readings</a></li>
+            <li><a href="mailto:contact@imbala.me" class="text-accent">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="md:hidden fixed bottom-0 w-full z-50 glass-nav border-t border-gray-800 pb-safe">
+        <div class="flex justify-around items-center py-4 text-xs text-gray-400">
+            <a href="index.html" class="flex flex-col items-center hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                <span class="mt-1">Home</span>
+            </a>
+            <a href="#" class="flex flex-col items-center text-accent">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg>
+                <span class="mt-1">Projects</span>
+            </a>
+            <a href="index.html#work" class="flex flex-col items-center hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <span class="mt-1">Work</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 px-6 w-full max-w-7xl mx-auto flex-grow">
+        
+        <div class="mb-12 md:mb-16 border-b border-white/10 pb-8">
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-4">Full Project Archive.</h1>
+            <p class="text-gray-400 text-lg max-w-2xl">
+                A complete list of my technical projects, experiments, and builds across hardware, AI, and software.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <a href="project-car.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all p-6 flex flex-col h-full">
+                <div class="h-48 mb-6 overflow-hidden rounded-2xl relative bg-neutral-800">
+                    <img src="images/projects/efwdc-car/thumb.jpg" alt="EFWDC Car" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                    <span class="absolute top-4 left-4 px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full">🏆 1st Prize</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent">Electric Four-Wheeler (SAE)</h3>
+                <p class="text-gray-400 text-sm mb-6 flex-grow">Semi-autonomous EV powertrain with mobile-based control and custom differential logic.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
+                    <span class="border border-white/10 px-2 py-1 rounded">EV Powertrain</span>
+                    <span class="border border-white/10 px-2 py-1 rounded">IoT</span>
+                    <span class="border border-white/10 px-2 py-1 rounded">C++</span>
+                </div>
+            </a>
+
+            <a href="project-dispatcher.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all p-6 flex flex-col h-full">
+                <div class="h-48 mb-6 overflow-hidden rounded-2xl relative bg-neutral-800">
+                    <img src="images/projects/ai-dispatcher/thumb.jpg" alt="AI Dispatcher" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent">AI Emergency Dispatcher</h3>
+                <p class="text-gray-400 text-sm mb-6 flex-grow">NIT Trichy Intern Project. NLP system to classify calls and automate dispatch via GeoJSON.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
+                    <span>#NLP</span> <span>#Python</span> <span>#GeoJSON</span>
+                </div>
+            </a>
+
+             <a href="project-pothole.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all p-6 flex flex-col h-full">
+                <div class="h-48 mb-6 overflow-hidden rounded-2xl relative bg-neutral-800">
+                    <img src="images/projects/pothole-mapping/thumb.jpg" alt="Pothole Mapping" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent">Automated Pothole Mapping</h3>
+                <p class="text-gray-400 text-sm mb-6 flex-grow">Real-time road hazard detection system using Computer Vision.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
+                    <span class="border border-white/10 px-2 py-1 rounded">OpenCV</span>
+                    <span class="border border-white/10 px-2 py-1 rounded">Python</span>
+                </div>
+            </a>
+
+            <a href="project-emotion.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all p-6 flex flex-col h-full">
+                <div class="h-48 mb-6 overflow-hidden rounded-2xl relative bg-neutral-800">
+                    <img src="images/projects/emotion-detection/thumb.jpg" alt="Emotion Detection" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent">Real-Time Emotion Detection</h3>
+                <p class="text-gray-400 text-sm mb-6 flex-grow">Custom YOLOv8 model trained on 6.6k images for instant emotion recognition.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
+                    <span class="border border-white/10 px-2 py-1 rounded">YOLOv8</span>
+                    <span class="border border-white/10 px-2 py-1 rounded">Deep Learning</span>
+                </div>
+            </a>
+
+             <a href="project-game.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all p-6 flex flex-col h-full">
+                <div class="h-48 mb-6 overflow-hidden rounded-2xl relative bg-neutral-800">
+                    <img src="images/projects/stem-game/thumb.jpg" alt="STEM Game" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent">AI-Powered STEM Game</h3>
+                <p class="text-gray-400 text-sm mb-6 flex-grow">Educational platform that uses generative AI to create dynamic real-world questions.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
+                    <span class="border border-white/10 px-2 py-1 rounded">AI</span>
+                    <span class="border border-white/10 px-2 py-1 rounded">Gamification</span>
+                </div>
+            </a>
+
+
+            <a href="#" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all p-6 flex flex-col h-full opacity-60 hover:opacity-100">
+                <div class="h-48 mb-6 overflow-hidden rounded-2xl relative bg-neutral-800 flex items-center justify-center border-2 border-dashed border-white/20">
+                    <span class="text-gray-500 font-mono">Image Coming Soon</span>
+                    </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent">Another Awesome Project</h3>
+                <p class="text-gray-400 text-sm mb-6 flex-grow">A short description of another cool thing I built goes here.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
+                    <span class="border border-white/10 px-2 py-1 rounded">Tech A</span>
+                    <span class="border border-white/10 px-2 py-1 rounded">Tech B</span>
+                </div>
+            </a>
+
+             <a href="#" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all p-6 flex flex-col h-full opacity-60 hover:opacity-100">
+                <div class="h-48 mb-6 overflow-hidden rounded-2xl relative bg-neutral-800 flex items-center justify-center border-2 border-dashed border-white/20">
+                    <span class="text-gray-500 font-mono">Image Coming Soon</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent">Hardware Prototype V2</h3>
+                <p class="text-gray-400 text-sm mb-6 flex-grow">Details about a hardware-focused project involving sensors and microcontrollers.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
+                    <span class="border border-white/10 px-2 py-1 rounded">Arduino</span>
+                    <span class="border border-white/10 px-2 py-1 rounded">Sensors</span>
+                </div>
+            </a>
+
+             <a href="#" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all p-6 flex flex-col h-full opacity-60 hover:opacity-100">
+                <div class="h-48 mb-6 overflow-hidden rounded-2xl relative bg-neutral-800 flex items-center justify-center border-2 border-dashed border-white/20">
+                    <span class="text-gray-500 font-mono">Image Coming Soon</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent">Legacy Web App</h3>
+                <p class="text-gray-400 text-sm mb-6 flex-grow">An older full-stack web application project built during early learning days.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
+                    <span class="border border-white/10 px-2 py-1 rounded">React</span>
+                    <span class="border border-white/10 px-2 py-1 rounded">Node.js</span>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="py-8 text-center text-gray-500 text-sm font-mono border-t border-white/5">
+        <p>© 2025 Balamurugan S. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
