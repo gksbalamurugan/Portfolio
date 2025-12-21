@@ -195,110 +195,122 @@
     </section>
 
    <section id="projects" class="py-24 px-6 w-full max-w-7xl mx-auto border-t border-white/5">
-        
-        <div class="flex flex-wrap justify-between items-end mb-12 md:mb-16 gap-4">
-            <div>
-                <h2 class="text-accent font-mono text-xl md:text-2xl mb-4 font-bold tracking-wide">02. Project Highlights</h2>
-                <h3 class="text-3xl md:text-4xl font-bold text-white">What I've built.</h3>
-            </div>
-            
-            <a href="projects.html" class="hidden md:flex items-center gap-2 text-sm font-mono text-accent hover:text-white transition-colors group">
-                View Full Archive 
-                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-            </a>
-        </div>
+       
+       <div class="flex flex-wrap justify-between items-end mb-12 md:mb-16 gap-4">
+           <div>
+               <h2 class="text-accent font-mono text-xl md:text-2xl mb-4 font-bold tracking-wide">02. Project Highlights</h2>
+               <h3 class="text-3xl md:text-4xl font-bold text-white">What I've built.</h3>
+           </div>
+           
+           <a href="projects.html" class="hidden md:flex items-center gap-2 text-sm font-mono text-accent hover:text-white transition-colors group">
+               View Full Archive 
+               <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+           </a>
+       </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[350px]">
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[350px]">
 
-            <a href="project-car.html" class="group relative lg:col-span-2 rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 block">
+           <a href="project-car.html" class="group relative lg:col-span-2 rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 block">
+               <div class="absolute inset-0">
+                   <img src="images/projects/efwdc_car/thumb.jpg" alt="EFWDC Car" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700">
+                   <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+               </div>
+               
+               <div class="absolute bottom-0 left-0 p-8 w-full">
+                   <div class="flex items-center gap-3 mb-3">
+                       <span class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full flex items-center gap-1">
+                           🏆 1st Prize Winner
+                       </span>
+                       <span class="text-accent text-xs font-mono">EFWDC 2025</span>
+                   </div>
+                   <h3 class="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-accent transition-colors">Electric Four-Wheeler (SAE)</h3>
+                   <p class="text-gray-300 text-sm md:text-base mb-4 max-w-lg hidden md:block">
+                       Designed the semi-autonomous powertrain and control logic. Features mobile-based control and custom differential systems.
+                   </p>
+                   <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-400">
+                       <span class="bg-white/5 px-2 py-1 rounded border border-white/10">EV Powertrain</span>
+                       <span class="bg-white/5 px-2 py-1 rounded border border-white/10">IoT Control</span>
+                   </div>
+               </div>
+           </a>
+
+           <a href="project-dispatcher.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 flex flex-col">
+               <div class="absolute inset-0">
+                    <img src="images/projects/ai_dispatcher/thumb.png" alt="AI Dispatcher" class="w-full h-full object-cover opacity-30 group-hover:opacity-20 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+               </div>
+               
+               <div class="relative h-full flex flex-col justify-end p-8">
+                   <div class="mb-auto">
+                       <div class="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                       </div>
+                   </div>
+                   <h3 class="text-xl font-bold text-white mb-2">AI Emergency Dispatcher</h3>
+                   <p class="text-gray-400 text-sm mb-4">
+                       NIT Trichy Intern Project. An NLP-driven system that classifies emergency calls and dispatches units via GeoJSON.
+                   </p>
+                   <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
+                       <span>#NLP</span> <span>#GeoJSON</span> <span>#Python</span>
+                   </div>
+               </div>
+           </a>
+
+           <a href="project-pothole.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 p-8 flex flex-col justify-between">
+               <div class="absolute inset-0">
+                    <img src="images/projects/pothole_mapping/thumb.jpg" alt="Pothole Mapping" class="w-full h-full object-cover opacity-30 group-hover:opacity-20 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+               </div>
+               <div class="relative z-10">
+                   <h3 class="text-xl font-bold text-white mb-2">Automated Pothole Mapping</h3>
+                   <p class="text-gray-400 text-sm">Computer vision system using OpenCV to detect road hazards and alert drivers in real-time.</p>
+               </div>
+               <div class="relative z-10 mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+                   <span class="text-gray-500">OpenCV / Python</span>
+                   <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+               </div>
+           </a>
+
+           <a href="project-emotion.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 p-8 flex flex-col justify-between">
+               <div class="absolute inset-0">
+                    <img src="images/projects/emotion-detection/thumb.jpg" alt="Emotion Detection" class="w-full h-full object-cover opacity-30 group-hover:opacity-20 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+               </div>
+               <div class="relative z-10">
+                   <h3 class="text-xl font-bold text-white mb-2">Emotion Detection</h3>
+                   <p class="text-gray-400 text-sm">Real-time emotion recognition trained on a custom YOLOv8 model with 6.6k images.</p>
+               </div>
+               <div class="relative z-10 mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+                   <span class="text-gray-500">YOLOv8 / Deep Learning</span>
+                   <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+               </div>
+           </a>
+
+           <a href="project-game.html" class="group relative md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 p-8 flex flex-col justify-between">
                 <div class="absolute inset-0">
-                    <img src="images/car.jpg" alt="EFWDC Car" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
-                </div>
-                
-                <div class="absolute bottom-0 left-0 p-8 w-full">
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full flex items-center gap-1">
-                            🏆 1st Prize Winner
-                        </span>
-                        <span class="text-accent text-xs font-mono">EFWDC 2025</span>
-                    </div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-accent transition-colors">Electric Four-Wheeler (SAE)</h3>
-                    <p class="text-gray-300 text-sm md:text-base mb-4 max-w-lg hidden md:block">
-                        Designed the semi-autonomous powertrain and control logic. Features mobile-based control and custom differential systems.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-400">
-                        <span class="bg-white/5 px-2 py-1 rounded border border-white/10">EV Powertrain</span>
-                        <span class="bg-white/5 px-2 py-1 rounded border border-white/10">IoT Control</span>
-                    </div>
-                </div>
-            </a>
+                    <img src="images/projects/stem-game/thumb.jpg" alt="STEM Game" class="w-full h-full object-cover opacity-30 group-hover:opacity-20 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+               </div>
+                <div class="relative z-10">
+                   <h3 class="text-xl font-bold text-white mb-2">AI STEM Game</h3>
+                   <p class="text-gray-400 text-sm">Interactive learning game that generates real-world STEM questions dynamically using AI.</p>
+               </div>
+               <div class="relative z-10 mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+                   <span class="text-gray-500">Gamification / AI</span>
+                   <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+               </div>
+           </a>
 
-            <a href="project-dispatcher.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 flex flex-col">
-                <div class="absolute inset-0">
-                     <img src="images/dispatcher.jpg" alt="AI Dispatcher" class="w-full h-full object-cover opacity-30 group-hover:opacity-20 transition-all duration-700">
-                     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
-                </div>
-                
-                <div class="relative h-full flex flex-col justify-end p-8">
-                    <div class="mb-auto">
-                        <div class="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">AI Emergency Dispatcher</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                        NIT Trichy Intern Project. An NLP-driven system that classifies emergency calls and dispatches units via GeoJSON.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
-                        <span>#NLP</span> <span>#GeoJSON</span> <span>#Python</span>
-                    </div>
-                </div>
-            </a>
+       </div>
 
-            <a href="project-pothole.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 p-8 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold text-white mb-2">Automated Pothole Mapping</h3>
-                    <p class="text-gray-400 text-sm">Computer vision system using OpenCV to detect road hazards and alert drivers in real-time.</p>
-                </div>
-                <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
-                    <span class="text-gray-500">OpenCV / Python</span>
-                    <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-            </a>
+       <div class="mt-8 md:hidden flex justify-center">
+            <a href="projects.html" class="inline-flex items-center gap-2 text-sm font-mono text-accent hover:text-white transition-colors border border-accent/20 px-6 py-3 rounded-full">
+               View Full Archive 
+               <span>→</span>
+           </a>
+       </div>
 
-            <a href="project-emotion.html" class="group relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 p-8 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold text-white mb-2">Emotion Detection</h3>
-                    <p class="text-gray-400 text-sm">Real-time emotion recognition trained on a custom YOLOv8 model with 6.6k images.</p>
-                </div>
-                <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
-                    <span class="text-gray-500">YOLOv8 / Deep Learning</span>
-                    <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-            </a>
-
-            <a href="project-game.html" class="group relative md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-accent/50 transition-all duration-500 p-8 flex flex-col justify-between">
-                 <div>
-                    <h3 class="text-xl font-bold text-white mb-2">AI STEM Game</h3>
-                    <p class="text-gray-400 text-sm">Interactive learning game that generates real-world STEM questions dynamically using AI.</p>
-                </div>
-                <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
-                    <span class="text-gray-500">Gamification / AI</span>
-                    <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-            </a>
-
-        </div>
-
-        <div class="mt-8 md:hidden flex justify-center">
-             <a href="projects.html" class="inline-flex items-center gap-2 text-sm font-mono text-accent hover:text-white transition-colors border border-accent/20 px-6 py-3 rounded-full">
-                View Full Archive 
-                <span>→</span>
-            </a>
-        </div>
-
-    </section>
+   </section>
     
     <script>
         // TYPEWRITER SCRIPT (UNCHANGED)
